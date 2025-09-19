@@ -4,6 +4,7 @@ img{max-width: 100%;
     text-align: center;
   
     ul{display: flex;
+        justify-content: center;
             justify-content: space-around;
      }
 }
