@@ -1,13 +1,14 @@
 @charset "utf-8";
-img{ul{
-        max-width: 100%;
-        display: flex;
+img{max-width: 100%;
+    display: flex;
+    ul{
             justify-content: space-around;
             align-items: center;
      }
-        @media (min-width: 600px) {
+     
+}
+ @media (min-width: 600px) {
             h1{
             font-size: 4rem;
             }
-        }
-    }
+}
