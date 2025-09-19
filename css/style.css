@@ -9,8 +9,7 @@ img{
         }
         main{
             display: flex;
-            justify-content: space-around center;
+            justify-content: space-around;
             align-items: center;
-            gap: 10px;/*3%*
         }
     }
