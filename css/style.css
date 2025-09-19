@@ -1,4 +1,31 @@
 @charset "utf-8";
+.section{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+.section img{
+    max-width: 100%;
+    height: auto;
+}
+.section h1{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 0;
+    margin: 0;
+}
+.section p{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 0;
+    margin: 0;
+}
+
 .img1{
     display: flex;
     justify-content: center;
@@ -33,5 +60,11 @@
  @media (min-width: 600px) {
             h1{
             font-size: 4rem;
+            }
+            h3{
+            font-size: 2rem;
+            }
+            p{
+            font-size: 1.5rem;
             }
 }
