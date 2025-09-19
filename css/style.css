@@ -1,9 +1,9 @@
 @charset "utf-8";
-.img{
+.img1{
     display: flex;
     align-items: center;
 }
-.img img{
+.img1 img{
     max-width: 70%;
     height: auto;
 }
