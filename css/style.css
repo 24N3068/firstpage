@@ -15,7 +15,7 @@
     width: 100%;
 }
 .img-sub img{ 
-    max-width: 100%;
+    max-width: 30%;
     height: auto;
 }
 
@@ -25,7 +25,7 @@
     width: 100%;
 }
 .img-sub2 img{ 
-    max-width: 100%;
+    max-width: 30%;
     height: auto;
 }
  @media (min-width: 600px) {
