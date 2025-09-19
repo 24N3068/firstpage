@@ -9,7 +9,8 @@ img{
         }
         main{
             display: flex;
-            justify-content: center;
+            justify-content: space-around center;
+            align-items: center;
             gap: 10px;/*3%*
         }
     }
