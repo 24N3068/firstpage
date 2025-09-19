@@ -1,11 +1,11 @@
 @charset "utf-8";
 img{max-width: 100%;
     display: flex;
+    text-align: center;
+    align-items: center;
     ul{display: flex;
             justify-content: space-around;
-            align-items: center;
      }
-     
 }
  @media (min-width: 600px) {
             h1{
