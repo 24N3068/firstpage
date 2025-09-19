@@ -12,7 +12,6 @@
 .img-sub{
     display: flex;
     justify-content: center;  
-    gap: 16px;
     width: 100%;
 }
 .img-sub img{ 
@@ -23,7 +22,6 @@
 .img-sub2{
     display: flex;
     justify-content: center;  
-    gap: 16px;
     width: 100%;
 }
 .img-sub2 img{ 
