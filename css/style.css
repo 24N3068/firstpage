@@ -1,8 +1,14 @@
 @charset "utf-8";
 .img{
+    display: flex;
     max-width: 100%;
     text-align: center;
 }
+.img img{
+    max-width: 100%;
+    height: auto;
+}
+
 .img-sub{
     display: flex;
     text-align: center;
