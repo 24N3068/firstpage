@@ -1,7 +1,8 @@
 @charset "utf-8";
 .img1{
     display: flex;
-    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 .img1 img{
     max-width: 70%;
@@ -12,6 +13,7 @@
     display: flex;
     justify-content: center;  
     gap: 16px;
+    width: 100%;
 }
 .img-sub img{ 
     max-width: 100%;
@@ -22,6 +24,7 @@
     display: flex;
     justify-content: center;  
     gap: 16px;
+    width: 100%;
 }
 .img-sub2 img{ 
     max-width: 100%;
