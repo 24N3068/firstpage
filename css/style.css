@@ -1,7 +1,7 @@
 @charset "utf-8";
 .img{
     display: flex;
-    text-align: center;
+    align-items: center;
 }
 .img img{
     max-width: 70%;
@@ -10,8 +10,8 @@
 
 .img-sub{
     display: flex;
-    text-align: center;
-    justify-content: space-around;   
+    justify-content: center;  
+    gap: 16px;
 }
 .img-sub img{ 
     max-width: 100%;
