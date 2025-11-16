@@ -4,19 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex" />
+    <title>My Summer Week</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Racing+Sans+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+<style>
+   #opening {
+            position: fixed;
+            inset: 0;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 999;
+            animation: openingFade 2.5s forwards;
+        }
+
+        #opening h1 {
+            font-size: 40px;
+            font-family: 'Racing Sans One';
+        }
+
+        @keyframes openingFade {
+            0% { opacity: 1; }
+            70% { opacity: 1; }
+            100% { opacity: 0; visibility: hidden; }
+        }
+
+        /* Menu Page */
+        #menuPage {
+            padding: 40px 0;
+            text-align: center;
+            background: #ebf8cf;
+        }
+        .menu-buttons button {
+            margin: 5px;
+            padding: 10px 18px;
+            font-size: 18px;
+            border: none;
+            background: #f7e3a7;
+            border-radius: 8px;
+        }
+
+        /* TOPへ戻る */
+        #backTop {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            padding: 10px 14px;
+            display: none;
+            border-radius: 50%;
+            border: none;
+            background: #ffa;
+            font-size: 18px;
+        }
+</style>
 </head>
+
 <body>
+  <div id="opening">
     <div class="section">
         <img src="skylong.jpg" alt="夏空">
      <h3>My Summer Week</h3>
      <p style="font-size: 13px;">Fashion Memories of 7 Days</p>
-    </div>
+     
+    </div></div>
     
-     <h3><span class="Day">Day1</span><span class="sentence">　よさこい祭り</span></h3>
+<div id="menuPage">
+    <h2><span class="Day"> Days</h2></span>
+    <div class="menu-buttons">
+        <button onclick="goTo('day1')"><span class="Day">Day1</span></button>
+        <button onclick="goTo('day2')"><span class="Day">Day2</span></button>
+        <button onclick="goTo('day3')"><span class="Day">Day3</span></button>
+        <button onclick="goTo('day4')"><span class="Day">Day4</span></button>
+        <button onclick="goTo('day5')"><span class="Day">Day5</span></button>
+        <button onclick="goTo('day6')"><span class="Day">Day6</span></button>
+        <button onclick="goTo('day7')"><span class="Day">Day7</span></button>
+
+    </div>
+</div>
+
+     <h3 id="day1"><span class="Day">Day1</span><span class="sentence">　よさこい祭り</span></h3>
      <div class="img1">
         <img src="yosakoi.jpg" alt="よさこい祭りで踊ったときのコーデ">
      <br/>
@@ -30,20 +99,20 @@
      <div class="caption"><p>私の夏休みのスタートは、よさこい祭り。お披露目の舞台は気温も心もアツかったです。夜には花火も上がって最高のスタートを切りました。</p>
     </div>
 
-     <h3><span class="Day">Day2</span><span class="sentence">　川下り</span></h3>
+     <h3 id="day2"><span class="Day">Day2</span><span class="sentence">　川下り</span></h3>
      <div class="img1">
      <img src="ice.jpg" alt="川下りに行ったときのコーデ">
      <br/>
     </div>
      <br/>
     <div class="img-sub">
-     <img src="linedown.JPG" width="30%" alt="川下り中">
-     <img src="iceup.JPG" width="30%" alt="かき氷">
+     <img src="linedown.jpg" width="30%" alt="川下り中">
+     <img src="iceup.jpg" width="30%" alt="かき氷">
     </div>
      <div class="caption"><p>川下りに行きました。晴れていて空も川も綺麗な自然に囲まれた一日。かき氷も食べて夏を味わいました。</p>
      </div>
 
-     <h3><span class="Day">Day3</span><span class="sentence">　水族館</span></h3>
+     <h3 id="day3"><span class="Day">Day3</span><span class="sentence">　水族館</span></h3>
     <div class="img1">
      <img src="fish.jpg" alt="水族館に行ったときのコーデ">
      <br/>
@@ -55,33 +124,33 @@
      <div class="caption"><p>久しぶりの水族館。頭上を通る魚たちを見て涼しげな気分になりました。</p>
      </div>
 
-     <h3><span class="Day">Day4</span><span class="sentence2">　Disney Sea</span></h3>
+     <h3 id="day4"><span class="Day">Day4</span><span class="sentence2">　Disney Sea</span></h3>
      <div class="img1">
      <img src="disney.jpg" alt="ディズニーに行ったときのコーデ">
      <br/>
     </div>
      <br/>
     <div class="img-sub">
-    <img src="catsle.JPG" width="30%" alt="アレンデールのお城">
-    <img src="catstle2.JPG" width="30%" alt="ラプンツェルの塔">
+    <img src="catsle1.jpg" width="30%" alt="アレンデールのお城">
+    <img src="catstle2.jpg" width="30%" alt="ラプンツェルの塔">
     </div>
      <div class="caption"><p>初めての新エリアで大興奮。つい感動の涙が出てしまいました。</p>
      </div>
 
-     <h3><span class="Day">Day5</span><span class="sentence">　ひまわり畑</span></h3>
+     <h3 id="day5"><span class="Day">Day5</span><span class="sentence">　ひまわり畑</span></h3>
      <div class="img1">
      <img src="flower.jpg" alt="ひまわり畑に行ったときのコーデ">
      <br/>
     </div>
      <br/>
     <div class="img-sub">
-     <img src="himawariall.JPG" width="30%" alt="ひまわり畑">
+     <img src="himawariall.jpg" width="30%" alt="ひまわり畑">
      <img src="himawariup.jpg" width="30%" alt="ひまわり">
     </div>
      <div class="caption"><p>満開のひまわりを見に行きました。全体的に見ても綺麗でしたが、色や形、大きさ様々で近くで見ても面白かったです。</p>
      </div>
 
-     <h3><span class="Day">Day6</span><span class="sentence">　ライブ</span></h3>
+     <h3 id="day6"><span class="Day">Day6</span><span class="sentence">　ライブ</span></h3>
      <div class="img1">
      <img src="live.jpg" alt="バンドのライブに行ったときのコーデ">
      <br/>
@@ -93,16 +162,34 @@
      <div class="caption"><p>好きなバンドのライブに行きました。初めてのライブハウスで、アーティストとの近さに驚き。</p>
      </div>
 
-     <h3><span class="Day">Day7</span><span class="sentence2">　BBQ</span></h3>
+     <h3 id="day7"><span class="Day">Day7</span><span class="sentence2">　BBQ</span></h3>
      <div class="img1">
      <img src="bbq.jpg" alt="バーベキューに行ったときのコーデ">
      <br/>
     </div>
      <br/>
     <div class="img-sub2">
-      <img src="bbqfood.JPG" alt="BBQ">
+      <img src="bbqfood.jpg" alt="BBQ">
     </div>
      <div class="caption"><p>BBQをしました。お肉に野菜に焼きそばや、マシュマロ、ポップコーンなど、、、おなかいっぱい！</p>
      </div>
+
+<button id="backTop" onclick="goTop()">▲</button>
+
+
+<script>
+    /* ▼▼ JS ▼▼ */
+    function goTo(id) {
+        document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+    function goTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    window.addEventListener('scroll', () => {
+        const btn = document.getElementById("backTop");
+        btn.style.display = (window.scrollY > 350) ? "block" : "none";
+    });
+</script>
+
 </body>
 </html>
